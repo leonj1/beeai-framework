@@ -19,7 +19,7 @@ jobs:
   test:
     timeout-minutes: 120
     name: Tests
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, linux, x64]
     env:
       TEST_NUM_WORKERS: ${{ vars.TEST_NUM_WORKERS }}
     steps:
